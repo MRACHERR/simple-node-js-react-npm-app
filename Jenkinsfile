@@ -9,6 +9,9 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'npm install' 
+                sh 'npm install @rollup/plugin-terser'
+                sh 'npm install @jridgewell/sourcemap-codec'
+                sh 'npm install svgo@^2.0.0'
             }
         }
     }
