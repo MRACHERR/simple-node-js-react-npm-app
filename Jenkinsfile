@@ -14,10 +14,10 @@ pipeline {
                 sh 'npm install svgo@^2.0.0'
             }
         }
-    }
-     stage('Test') {
+         stage('Test') {
             steps {
                 sh './jenkins/scripts/test.sh'
             }
         }
+    }
 }
